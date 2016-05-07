@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/xetys/uni-todo-full-stack.svg?branch=master)](https://travis-ci.org/xetys/uni-todo-full-stack)
+
 # TodoApp
 
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
@@ -42,7 +44,7 @@ To ensure everything worked, run:
 
     java -jar build/libs/*.war --spring.profiles.active=prod
 
-Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
+Then navigate to [http://localhost](http://localhost) in your browser.
 
 ## Testing
 
