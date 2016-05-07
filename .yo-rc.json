@@ -1,0 +1,29 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.2.0",
+    "baseName": "TodoApp",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "no",
+    "buildTool": "gradle",
+    "enableSocialSignIn": false,
+    "rememberMeKey": "180844d2169ebce8022c6a4db1084d8192dcbf06",
+    "useSass": false,
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ]
+  }
+}

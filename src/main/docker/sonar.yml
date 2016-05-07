@@ -1,0 +1,8 @@
+version: '2'
+services:
+    todoapp-sonar:
+        container_name: todoapp-sonar
+        image: sonarqube:5.3
+        ports:
+            - 9000:9000
+            - 9092:9092

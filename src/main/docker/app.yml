@@ -1,0 +1,15 @@
+version: '2'
+services:
+    todoapp-app:
+        image: todoapp
+        external_links:
+            - todoapp-postgresql:postgresql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/TodoApp
+        ports:
+            - 8080:8080
+    todoapp-postgresql:
+        extends:
+            file: postgresql.yml
+            service: todoapp-postgresql
