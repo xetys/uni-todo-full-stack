@@ -37,6 +37,7 @@ We use [Gulp][] as our build system. Install the Gulp command-line tool globally
     npm install -g gulp
 
 We use [Docker][] for container virtualization and deployment. To run the app with docker on port 8080 run:
+
     ./gradlew -x test build bootRepackage buildDocker
      docker run -it --name todo-app -p 8080:80 todoapp
 
@@ -49,8 +50,8 @@ Run the following commands in two separate terminals to create a blissful develo
 auto-refreshes when files change on your hard drive.
 
 ``` sh
-    ./gradlew # or ./gradlew -x test build bootRepackage buildDocker && docker run -it --name todo-app -p 8080:80 todoapp
-    gulp
+./gradlew # or ./gradlew -x test build bootRepackage buildDocker && docker run -it --name todo-app -p 8080:80 todoapp
+gulp
 ```
 
 Bower is used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
