@@ -8,11 +8,11 @@ The entire development of this application from zero to deploy on a productive c
 You can watch it here:
 
 [![Develop and deploy an Todo application using JHipster 3.2](https://img.youtube.com/vi/0nuujPb53Xc/0.jpg)](https://www.youtube.com/watch?v=0nuujPb53Xc "Develop and deploy an Todo application using JHipster 3.2 ")
+**(2x speed recommended)**
 
 # Online demo
 
 you can find a installed demo here [http://todo-app-uni.stytex.cloud/][03a06597]
-**(2x speed recommended)**
 
   [03a06597]: http://todo-app-uni.stytex.cloud/ "Todo app demo"
 
