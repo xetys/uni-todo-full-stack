@@ -12,6 +12,7 @@ You can watch it here:
 # Online demo
 
 you can find a installed demo here [http://todo-app-uni.stytex.cloud/][03a06597]
+**(2x speed recommended)**
 
   [03a06597]: http://todo-app-uni.stytex.cloud/ "Todo app demo"
 
@@ -28,16 +29,29 @@ After installing Node, you should be able to run the following command to instal
 [Bower][] and [BrowserSync][]). You will only need to run this command when dependencies change in package.json.
 
     npm install
+We use [Bower][] as our asset dependency manager. Install the Bower command-line globally with:
+    npm install -g bower
 
 We use [Gulp][] as our build system. Install the Gulp command-line tool globally with:
 
     npm install -g gulp
 
+We use [Docker][] for container virtualization and deployment. To run the app with docker on port 8080 run:
+    ./gradlew -x test build bootRepackage buildDocker
+     docker run -it --name todo-app -p 8080:80 todoapp
+
+### Attention
+
+For a better dokku deployment the dev profile is configured to run on port 80. Change these settings in src/main/resources/config/application-dev.yml
+or use docker to run the app locally as mentioned above.
+
 Run the following commands in two separate terminals to create a blissful development experience where your browser
 auto-refreshes when files change on your hard drive.
 
-    ./gradlew
+``` sh
+    ./gradlew # or ./gradlew -x test build bootRepackage buildDocker && docker run -it --name todo-app -p 8080:80 todoapp
     gulp
+```
 
 Bower is used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
 specifying a newer version in `bower.json`. You can also run `bower update` and `bower install` to manage dependencies.
@@ -92,3 +106,4 @@ To setup this project in Jenkins, use the following configuration:
 [Karma]: http://karma-runner.github.io/
 [Jasmine]: http://jasmine.github.io/2.0/introduction.html
 [Protractor]: https://angular.github.io/protractor/
+[Docker]: https://www.docker.com/
